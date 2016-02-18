@@ -11,6 +11,7 @@
     </parent>
     <artifactId>module-a</artifactId>
     <dependencies>
+	<!-- remark -->
         <!-- Versions managed in parent pom -->
         <dependency>
             <groupId>commons-cli</groupId>
