@@ -24,8 +24,8 @@
 	
 	<scm>
 		<url>https://github.com/amosstikal/test-multi-module-release-plugin</url>
-		<connection>scm:git:ssh://github.com/amosstikal/test-multi-module-release-plugin.git</connection>
-		<developerConnection>scm:git:ssh://github.com/amosstikal/test-multi-module-release-plugin.git</developerConnection>
+		<connection>scm:git:ssh://github.com:amosstikal/test-multi-module-release-plugin.git</connection>
+		<developerConnection>scm:git:ssh://github.com:amosstikal/test-multi-module-release-plugin.git</developerConnection>
 	</scm>
 	
 	
