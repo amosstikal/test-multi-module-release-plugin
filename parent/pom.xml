@@ -9,19 +9,19 @@
     <packaging>pom</packaging>
     <description>The parent pom holds all the necessary
         version and configuration information for submodules.</description>
-
+<!--
 	<scm>
 		<url>https://github.com/amosstikal/test-multi-module-release-plugin</url>
 		<connection>scm:git:https://mytests@github.com/amosstikal/test-multi-module-release-plugin.git</connection>
 		<developerConnection>scm:git:https://mytests@github.com/amosstikal/test-multi-module-release-plugin.git</developerConnection>
-	</scm>
+	</scm>-->
 	
-<!--	
+
 	<scm>
 		<url>https://github.com/amosstikal/test-multi-module-release-plugin</url>
 		<connection>scm:git:git://github.com/amosstikal/test-multi-module-release-plugin.git</connection>
 		<developerConnection>scm:git:git://github.com/amosstikal/test-multi-module-release-plugin.git</developerConnection>
-	</scm>-->
+	</scm>
 		
     <dependencyManagement>
         <dependencies>

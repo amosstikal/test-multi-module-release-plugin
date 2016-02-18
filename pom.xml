@@ -8,19 +8,19 @@
     <packaging>pom</packaging>
     <version>1.0</version>
     
-	
+	<!--
 	<scm>
 		<url>https://github.com/amosstikal/test-multi-module-release-plugin</url>
 		<connection>scm:git:https://mytests@github.com/amosstikal/test-multi-module-release-plugin.git</connection>
 		<developerConnection>scm:git:https://mytests@github.com/amosstikal/test-multi-module-release-plugin.git</developerConnection>
-	</scm>
+	</scm>-->
 	
-	<!--
+	
 	<scm>
 		<url>https://github.com/amosstikal/test-multi-module-release-plugin</url>
 		<connection>scm:git:git://github.com/amosstikal/test-multi-module-release-plugin.git</connection>
 		<developerConnection>scm:git:git://github.com/amosstikal/test-multi-module-release-plugin.git</developerConnection>
-	</scm>-->
+	</scm>
 	
     <modules>
         <module>parent</module>
