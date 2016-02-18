@@ -9,27 +9,6 @@
     <packaging>pom</packaging>
     <description>The parent pom holds all the necessary
         version and configuration information for submodules.</description>
-<!--
-	<scm>
-		<url>https://github.com/amosstikal/test-multi-module-release-plugin</url>
-		<connection>scm:git:https://mytests@github.com/amosstikal/test-multi-module-release-plugin.git</connection>
-		<developerConnection>scm:git:https://mytests@github.com/amosstikal/test-multi-module-release-plugin.git</developerConnection>
-	</scm>-->
-	
-
-	<!--
-	<scm>
-		<url>https://github.com/amosstikal/test-multi-module-release-plugin</url>
-		<connection>scm:git:git://github.com/amosstikal/test-multi-module-release-plugin.git</connection>
-		<developerConnection>scm:git:git://github.com/amosstikal/test-multi-module-release-plugin.git</developerConnection>
-	</scm>-->
-	
-	<!--
-	<scm>
-		<url>https://github.com/amosstikal/test-multi-module-release-plugin</url>
-		<connection>scm:git:ssh://github.com/amosstikal/test-multi-module-release-plugin.git</connection>
-		<developerConnection>scm:git:ssh://github.com/amosstikal/test-multi-module-release-plugin.git</developerConnection>
-	</scm>-->
 		
     <dependencyManagement>
         <dependencies>
@@ -59,22 +38,12 @@
 			
 	<build>
 	
-		<pluginManagement>
-            <plugins>
-                <plugin>
-                    <groupId>com.github.danielflower.mavenplugins</groupId>
-                    <artifactId>multi-module-maven-release-plugin</artifactId>
-                    <version>1.4-SNAPSHOT</version>
-                </plugin>           
-            </plugins>
-        </pluginManagement>
-	
         <plugins>
             <plugin>
                 <groupId>com.github.danielflower.mavenplugins</groupId>
                 <artifactId>multi-module-maven-release-plugin</artifactId>
-                <!--<version>1.4.2</version>-->
-				<version>1.4-SNAPSHOT</version>
+                <version>1.4.2</version>
+				<!-- <version>1.4-SNAPSHOT</version> -->
             </plugin>
 			<plugin>
 				<artifactId>maven-plugin-plugin</artifactId>
