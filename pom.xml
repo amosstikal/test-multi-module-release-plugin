@@ -61,7 +61,7 @@
                             </publisher>
                             <buildInfo>
                                 <buildName>plugin-demo</buildName>
-                                <buildNumber>1</buildNumber>
+                                <buildNumber>${env.BUILD_NUMBER}</buildNumber>
                                 <buildUrl>http://build-url.org</buildUrl>
                             </buildInfo>
                         </configuration>
