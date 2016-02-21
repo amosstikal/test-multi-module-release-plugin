@@ -60,9 +60,9 @@
 								<publishBuildInfo>true</publishBuildInfo>
                             </publisher>
                             <buildInfo>
-                                <buildName>plugin-demo</buildName>
+                                <buildName>test-multi-module-release-reactor</buildName>
                                 <buildNumber>${env.BUILD_NUMBER}</buildNumber>
-                                <buildUrl>http://build-url.org</buildUrl>
+                                <buildUrl>${env.BUILD_URL}</buildUrl>
                             </buildInfo>
                         </configuration>
                     </execution>

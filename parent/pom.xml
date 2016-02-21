@@ -80,7 +80,7 @@
                             <buildInfo>
                                 <buildName>test-multi-module-release-parent</buildName>
                                 <buildNumber>${env.BUILD_NUMBER}</buildNumber>
-                                <buildUrl>http://build-url.org</buildUrl>
+                                <buildUrl>${env.BUILD_URL}</buildUrl>
                             </buildInfo>
 							
                         </configuration>
