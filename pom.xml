@@ -56,7 +56,7 @@
                                 <excludePatterns>*-tests.jar</excludePatterns>
                                 <repoKey>libs-release-local</repoKey>
                                 <snapshotRepoKey>libs-snapshot-local</snapshotRepoKey>
-								<publishBuildInfo>false</publishBuildInfo>
+								<publishBuildInfo>true</publishBuildInfo>
                             </publisher>
                             <buildInfo>
                                 <buildName>plugin-demo</buildName>
