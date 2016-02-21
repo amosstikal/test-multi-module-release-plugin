@@ -78,7 +78,7 @@
 								<publishBuildInfo>true</publishBuildInfo>
                             </publisher>
                             <buildInfo>
-                                <buildName>test-multi-module-release-parent</buildName>
+                                <buildName>test-multi-module-release-project</buildName>
                                 <buildNumber>${env.BUILD_NUMBER}</buildNumber>
                                 <buildUrl>${env.BUILD_URL}</buildUrl>
                             </buildInfo>
