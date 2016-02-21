@@ -24,18 +24,19 @@
 				<!--<version>1.4-SNAPSHOT</version>-->
                 <configuration>
                     <releaseGoals>
-                        <releaseGoal>install</releaseGoal>
+                        <releaseGoal>deploy</releaseGoal>
                     </releaseGoals>
                 </configuration>
             </plugin>
 			
+			<!--
 			<plugin>
 				<artifactId>maven-plugin-plugin</artifactId>
 				<version>2.3</version>
 				<configuration>
 					<goalPrefix>releaser</goalPrefix>
 				</configuration>
-			</plugin>
+			</plugin>-->
         </plugins>
     </build>
 </project>
