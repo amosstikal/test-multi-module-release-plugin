@@ -33,7 +33,7 @@
                 <groupId>org.jfrog.buildinfo</groupId>
                 <artifactId>artifactory-maven-plugin</artifactId>
                 <version>2.4.1</version>
-                <inherited>false</inherited>
+                <inherited>true</inherited>
                 <executions>
                     <execution>
                         <id>build-info</id>
@@ -56,6 +56,7 @@
                                 <excludePatterns>*-tests.jar</excludePatterns>
                                 <repoKey>libs-release-local</repoKey>
                                 <snapshotRepoKey>libs-snapshot-local</snapshotRepoKey>
+								<publishBuildInfo>false</publishBuildInfo>
                             </publisher>
                             <buildInfo>
                                 <buildName>plugin-demo</buildName>
