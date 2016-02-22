@@ -96,6 +96,21 @@
 		
     </build>
 	
+	
+	<plugins>
+				<plugin>
+					<groupId>com.github.danielflower.mavenplugins</groupId>
+					<artifactId>multi-module-maven-release-plugin</artifactId>
+				</plugin>
+				
+				
+				<plugin>
+					<groupId>org.jfrog.buildinfo</groupId>
+					<artifactId>artifactory-maven-plugin</artifactId>
+				</plugin>
+				
+			</plugins>
+	
 	<repositories>
         <repository>
             <snapshots>
