@@ -42,18 +42,28 @@
 		<pluginManagement>
 	
 			<plugins>
+			<!--
 				<plugin>
 					<groupId>com.github.danielflower.mavenplugins</groupId>
 					<artifactId>multi-module-maven-release-plugin</artifactId>
 					<version>1.4.2</version>
-				</plugin>
+				</plugin>-->
 				
+				<plugin>
+					<groupId>com.github.danielflower.mavenplugins</groupId>
+					<artifactId>multi-module-maven-release-plugin</artifactId>
+					<version>1.4.2</version>
+					<configuration>
+						<releaseGoals>
+							<releaseGoal>deploy</releaseGoal>
+						</releaseGoals>
+					</configuration>
+				</plugin>
 				
 				<plugin>
 					<groupId>org.jfrog.buildinfo</groupId>
 					<artifactId>artifactory-maven-plugin</artifactId>
 					<version>2.4.1</version>
-					<!--<inherited>true</inherited>-->
 					
 					<executions>
 						<execution>
@@ -95,25 +105,20 @@
 		</pluginManagement>
 		
 		
-		
-		
 		<plugins>
-				<plugin>
-					<groupId>com.github.danielflower.mavenplugins</groupId>
-					<artifactId>multi-module-maven-release-plugin</artifactId>
-				</plugin>
+			<plugin>
+				<groupId>com.github.danielflower.mavenplugins</groupId>
+				<artifactId>multi-module-maven-release-plugin</artifactId>
+			</plugin>
+					
+			<plugin>
+				<groupId>org.jfrog.buildinfo</groupId>
+				<artifactId>artifactory-maven-plugin</artifactId>
+			</plugin>
 				
-				
-				<plugin>
-					<groupId>org.jfrog.buildinfo</groupId>
-					<artifactId>artifactory-maven-plugin</artifactId>
-				</plugin>
-				
-			</plugins>
+		</plugins>
 		
     </build>
-	
-	
 	
 	
 	<repositories>
