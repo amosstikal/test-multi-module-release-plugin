@@ -42,23 +42,12 @@
 		<pluginManagement>
 	
 			<plugins>
-			<!--
+	
 				<plugin>
 					<groupId>com.github.danielflower.mavenplugins</groupId>
 					<artifactId>multi-module-maven-release-plugin</artifactId>
 					<version>1.4.2</version>
 				</plugin>
-				
-				<plugin>
-					<groupId>com.github.danielflower.mavenplugins</groupId>
-					<artifactId>multi-module-maven-release-plugin</artifactId>
-					<version>1.4.2</version>
-					<configuration>
-						<releaseGoals>
-							<releaseGoal>deploy</releaseGoal>
-						</releaseGoals>
-					</configuration>
-				</plugin>-->
 				
 				<plugin>
 					<groupId>org.jfrog.buildinfo</groupId>
