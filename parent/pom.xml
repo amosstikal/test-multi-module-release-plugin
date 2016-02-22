@@ -10,6 +10,10 @@
     <description>The parent pom holds all the necessary
         version and configuration information for submodules.</description>
 		
+	<properties>
+        <commons.cli.version>1.0</commons.cli.version>
+    </properties>
+		
     <dependencyManagement>
         <dependencies>
             <dependency>
@@ -32,63 +36,64 @@
             </dependency>
         </dependencies>
     </dependencyManagement>
-    <properties>
-        <commons.cli.version>1.0</commons.cli.version>
-            </properties>
 			
 	<build>
 	
-        <plugins>
-            <plugin>
-                <groupId>com.github.danielflower.mavenplugins</groupId>
-                <artifactId>multi-module-maven-release-plugin</artifactId>
-                <version>1.4.2</version>
-				<!-- <version>1.4-SNAPSHOT</version> -->
-            </plugin>
-			
-			
-			<plugin>
-                <groupId>org.jfrog.buildinfo</groupId>
-                <artifactId>artifactory-maven-plugin</artifactId>
-                <version>2.4.1</version>
-                <!--<inherited>true</inherited>-->
+		<pluginManagement>
+	
+			<plugins>
+				<plugin>
+					<groupId>com.github.danielflower.mavenplugins</groupId>
+					<artifactId>multi-module-maven-release-plugin</artifactId>
+					<version>1.4.2</version>
+				</plugin>
 				
-                <executions>
-                    <execution>
-                        <id>build-info</id>
-                        <goals>
-                            <goal>publish</goal>
-                        </goals>
-                        <configuration>
-                            <deployProperties>
-                                <gradle>awesome</gradle>
-                            </deployProperties>
-                            <artifactory>
-                                <includeEnvVars>true</includeEnvVars>
-                                <timeoutSec>60</timeoutSec>
-                                <propertiesFile>publish.properties</propertiesFile>
-                            </artifactory>
-                            <publisher>
-                                <contextUrl>http://artifactory:8081/artifactory</contextUrl>
-                                <username>admin</username>
-                                <password>password</password>
-                                <excludePatterns>*-tests.jar</excludePatterns>
-                                <repoKey>libs-release-local</repoKey>
-                                <snapshotRepoKey>libs-snapshot-local</snapshotRepoKey>
-								<publishBuildInfo>true</publishBuildInfo>
-                            </publisher>
-                            <buildInfo>
-                                <buildName>test-multi-module-release-project</buildName>
-                                <buildNumber>${env.BUILD_NUMBER}</buildNumber>
-                                <buildUrl>${env.BUILD_URL}</buildUrl>
-                            </buildInfo>
-							
-                        </configuration>
-                    </execution>
-                </executions>
-            </plugin>
-			
-        </plugins>
+				
+				<plugin>
+					<groupId>org.jfrog.buildinfo</groupId>
+					<artifactId>artifactory-maven-plugin</artifactId>
+					<version>2.4.1</version>
+					<!--<inherited>true</inherited>-->
+					
+					<executions>
+						<execution>
+							<id>build-info</id>
+							<goals>
+								<goal>publish</goal>
+							</goals>
+							<configuration>
+								<deployProperties>
+									<gradle>awesome</gradle>
+								</deployProperties>
+								<artifactory>
+									<includeEnvVars>true</includeEnvVars>
+									<timeoutSec>60</timeoutSec>
+									<propertiesFile>publish.properties</propertiesFile>
+								</artifactory>
+								<publisher>
+									<contextUrl>http://artifactory:8081/artifactory</contextUrl>
+									<username>admin</username>
+									<password>password</password>
+									<excludePatterns>*-tests.jar</excludePatterns>
+									<repoKey>libs-release-local</repoKey>
+									<snapshotRepoKey>libs-snapshot-local</snapshotRepoKey>
+									<publishBuildInfo>true</publishBuildInfo>
+								</publisher>
+								<buildInfo>
+									<buildName>test-multi-module-release-project</buildName>
+									<buildNumber>${env.BUILD_NUMBER}</buildNumber>
+									<buildUrl>${env.BUILD_URL}</buildUrl>
+								</buildInfo>
+								
+							</configuration>
+						</execution>
+					</executions>
+				</plugin>
+				
+			</plugins>
+		
+		</pluginManagement>
+		
     </build>
 	
 	<repositories>
@@ -101,6 +106,7 @@
             <url>http://jcenter.bintray.com</url>
         </repository>
     </repositories>
+	
     <pluginRepositories>
         <pluginRepository>
             <snapshots>
