@@ -28,13 +28,12 @@
                     </releaseGoals>
                 </configuration>
             </plugin>
-			
+			<!--
 			<plugin>
                 <groupId>org.jfrog.buildinfo</groupId>
                 <artifactId>artifactory-maven-plugin</artifactId>
                 <version>2.4.1</version>
-                <!--<inherited>true</inherited>-->
-				
+                				
                 <executions>
                     <execution>
                         <id>build-info</id>
@@ -67,7 +66,7 @@
                         </configuration>
                     </execution>
                 </executions>
-            </plugin>
+            </plugin>-->
 						
         </plugins>
     </build>
